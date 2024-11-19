@@ -64,7 +64,6 @@ $(document).ready(function () {
         }
     });
 
-    // Відображення результатів
     function showResult() {
         $("#finalResult").text(
             `Правильних відповідей: ${correctAnswers}\nНеправильних відповідей: ${incorrectAnswers}`
@@ -72,12 +71,11 @@ $(document).ready(function () {
         $("#resultModal").fadeIn();
     }
 
-    // Перезапуск гри
-    $("#restartButton").click(function () {
+   $("#restartButton").click(function () {
         $("#resultModal").fadeOut();
         initializeGame();
     });
 
-    // Старт гри
+
     initializeGame();
 });
