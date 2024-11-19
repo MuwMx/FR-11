@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЛР 11</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Перевірка знань з іноземної мови</h1>
+        <p id="wordIndex">Слово 1 із 10</p>
+        <div id="wordContainer">
+            <p id="randomWord">apple</p>
+        </div>
+        <input type="text" id="translationInput" placeholder="Введіть переклад">
+        <button id="checkButton" class="glow-on-hover">Перевірити</button>
+        <div class="scoreboard">
+            <p>Правильних: <span id="correctCount">0</span></p>
+            <p>Неправильних: <span id="incorrectCount">0</span></p>
+        </div>
+    </div>
+    <div id="resultModal" class="modal">
+        <div class="modal-content">
+            <h2>Результати</h2>
+            <p id="finalResult"></p>
+            <button id="restartButton">Спробувати знову</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
